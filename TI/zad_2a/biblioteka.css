@@ -1,0 +1,43 @@
+dzial {
+	margin: auto;
+	border-style: double;
+	border-width: 5px;
+	border-color: grey;
+	background-color: rgb(220, 222, 200); 
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	padding: 30px;
+	display: block;
+}
+
+ nazwaDzialu {
+ 	font-weight: bold;
+ 	font-size: large;
+ }
+
+ksiazka { 
+	display: block;
+	padding: 3px;
+	margin: 5px;
+	border: 2px groove gray;
+	background-color: rgb(190, 76, 76);
+}
+
+ksiazka:nth-child(even) {
+	background-color: rgb(120, 90, 80);
+}
+
+tytul {
+	display: block;
+	font-style: italic;
+}
+
+cenaC {
+	font-style: italic;
+}
+
+cena {
+	font-weight: bold;
+}

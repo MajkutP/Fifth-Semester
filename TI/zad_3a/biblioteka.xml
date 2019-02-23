@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="biblioteka.xsl"?>
+<biblioteka>
+  <dzialy>
+    <dzial nazwaDzialu = "Historia">
+      <ksiazka idDzialu = "Hi">
+        <autor>
+          <nazwisko>Hannah</nazwisko>
+          <imie>Kristin</imie>
+          </autor>
+          <tytul>Słowik</tytul>
+        <cenaC> 25</cenaC>
+      </ksiazka>
+      <ksiazka idDzialu = "Hi">
+        <autor>
+          <nazwisko>Follett</nazwisko>
+          <imie>Ken</imie>
+        </autor>
+        <tytul>Filary Ziemi</tytul>
+        <cenaC> 55</cenaC>
+      </ksiazka>
+    </dzial>
+     <dzial nazwaDzialu = "Fantastyka">
+      <ksiazka idDzialu = "Fa">
+        <autor>
+          <nazwisko>Glukhovsky</nazwisko>
+          <imie>Dmitry</imie>
+        </autor>
+        <tytul>Metro 2033</tytul>
+        <cenaC> 40</cenaC>
+      </ksiazka>
+      <ksiazka idDzialu = "Fa">
+        <autor>
+          <nazwisko>Clare</nazwisko>
+          <imie>Cassandra</imie>
+        </autor>
+        <tytul>Miasto kości</tytul>
+        <cenaC> 60</cenaC>
+      </ksiazka>
+    </dzial>
+    <dzial nazwaDzialu = "Literatura popularnonaukowa">
+      <ksiazka idDzialu = "Lp">
+        <autor>
+          <nazwisko>Fromm</nazwisko>
+          <imie>Erich</imie>
+        </autor>
+        <tytul>Anatomia ludzkiej destrukcyjności</tytul>
+        <cenaC> 35</cenaC>
+      </ksiazka>
+      <ksiazka idDzialu = "Lp">
+        <autor>
+          <nazwisko>Cioran</nazwisko>
+          <imie>Emil</imie>
+        </autor>
+        <tytul>Na szczytach rozpaczy</tytul>
+        <cenaC> 30</cenaC>
+      </ksiazka>
+    </dzial>
+    <dzial nazwaDzialu = "Poradniki">
+      <ksiazka idDzialu = "Po">
+        <autor>
+          <nazwisko>Szafrański</nazwisko>
+          <imie>Michał</imie>
+        </autor>
+        <tytul>Finansowy Ninja</tytul>
+        <cenaC> 50</cenaC>
+      </ksiazka>
+      <ksiazka idDzialu = "Po">
+        <autor>
+          <nazwisko>Johnson</nazwisko>
+          <imie>Spencer</imie>
+        </autor>
+        <tytul>Kto zabrał mój ser</tytul>
+        <cenaC> 35</cenaC>
+      </ksiazka>
+    </dzial>
+    <dzial nazwaDzialu = "Kryminalne">
+      <ksiazka idDzialu = "Kr">
+        <autor>
+          <nazwisko>Christie</nazwisko>
+          <imie>Agatha</imie>
+        </autor>
+        <tytul>Zabójstwo Rogera Ackroyda</tytul>
+        <cenaC> 45</cenaC>
+      </ksiazka>
+      <ksiazka idDzialu = "Kr">
+        <autor>
+          <nazwisko>Tey</nazwisko>
+          <imie>Josephine</imie>
+        </autor>
+        <tytul>Córka czasu</tytul>
+        <cenaC> 50</cenaC>
+      </ksiazka>
+    </dzial>
+  </dzialy>
+</biblioteka>

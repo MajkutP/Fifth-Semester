@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="biblioteka.css"?>
+<!DOCTYPE biblioteka SYSTEM "biblioteka.dtd">
+<biblioteka>
+  <dzialy>
+    <dzial>
+      <nazwaDzialu>Historia</nazwaDzialu>
+      <ksiazka>
+        <autor>
+          <nazwisko>Hannah</nazwisko>
+          <imie>Kristin</imie>
+          </autor>
+          <tytul>Słowik</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>25</cena>
+      </ksiazka>
+      <ksiazka>
+        <autor>
+          <nazwisko>Follett</nazwisko>
+          <imie>Ken</imie>
+        </autor>
+        <tytul>Filary Ziemi</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>55</cena>
+      </ksiazka>
+    </dzial>
+    <dzial>
+      <nazwaDzialu>Fantastyka</nazwaDzialu>
+      <ksiazka>
+        <autor>
+          <nazwisko>Glukhovsky</nazwisko>
+          <imie>Dmitry</imie>
+        </autor>
+        <tytul>Metro 2033</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>40</cena>
+      </ksiazka>
+      <ksiazka>
+        <autor>
+          <nazwisko>Clare</nazwisko>
+          <imie>Cassandra</imie>
+        </autor>
+        <tytul>Miasto kości</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>60</cena>
+      </ksiazka>
+    </dzial>
+    <dzial>
+      <nazwaDzialu>Literatura popularnonaukowa</nazwaDzialu>
+      <ksiazka>
+        <autor>
+          <nazwisko>Fromm</nazwisko>
+          <imie>Erich</imie>
+        </autor>
+        <tytul>Anatomia ludzkiej destrukcyjności</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>35</cena>
+      </ksiazka>
+      <ksiazka>
+        <autor>
+          <nazwisko>Cioran</nazwisko>
+          <imie>Emil</imie>
+        </autor>
+        <tytul>Na szczytach rozpaczy</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>30</cena>
+      </ksiazka>
+    </dzial>
+    <dzial>
+      <nazwaDzialu>Poradniki</nazwaDzialu>
+      <ksiazka>
+        <autor>
+          <nazwisko>Szafrański</nazwisko>
+          <imie>Michał</imie>
+        </autor>
+        <tytul>Finansowy Ninja</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>50</cena>
+      </ksiazka>
+      <ksiazka>
+        <autor>
+          <nazwisko>Johnson</nazwisko>
+          <imie>Spencer</imie>
+        </autor>
+        <tytul>Kto zabrał mój ser</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>35</cena>
+      </ksiazka>
+    </dzial>
+    <dzial>
+      <nazwaDzialu>Kryminalne</nazwaDzialu>
+      <ksiazka>
+        <autor>
+          <nazwisko>Christie</nazwisko>
+          <imie>Agatha</imie>
+        </autor>
+        <tytul>Zabójstwo Rogera Ackroyda</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>45</cena>
+      </ksiazka>
+      <ksiazka>
+        <autor>
+          <nazwisko>Tey</nazwisko>
+          <imie>Josephine</imie>
+        </autor>
+        <tytul>Córka czasu</tytul>
+        <cenaC>Cena</cenaC>
+        <cena>50</cena>
+      </ksiazka>
+    </dzial>
+  </dzialy>
+</biblioteka>

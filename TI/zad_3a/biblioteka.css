@@ -1,0 +1,34 @@
+.TytulyDzialow{
+	background-color: rgb(190, 76, 76);
+	border-style: double rgb(240, 200, 200);
+	font-size: large;
+	font-style: italic;
+	border-color: grey;
+}
+
+table{
+	margin: auto;
+	border: 5px double rgb(120, 100, 80);
+	border-style: double rgb(120, 100, 80);
+	padding: 2px;
+}
+
+td{
+	text-align: center;
+	padding: 5px;
+	border: 1px groove gray;
+	background-color: rgb(220, 222, 200);
+}
+
+td:nth-child(even)
+{
+	text-align: center;
+	padding: 10px;
+	border: 1px groove gray;
+	background-color: rgb(230, 222, 210);
+}
+
+tr:nth-child(4n){ 
+	color: MidnightBlue; 
+}
+

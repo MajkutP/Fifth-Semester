@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+</head>
+  <body>
+  	  <div style = "border: 18px inset; border-color: rgb(178,207,196); background-color: rgb(208,237,226);">
+  	  	<form name = "form" id = "parameters">
+  		Enter x coordiante: <input type = "text" name = "X"><p></p>
+  		Enter y coordiante: <input type = "text" name = "Y"><p></p>
+  		Enter radius:   	<input type = "text" name = "R"><p></p>
+  							<input type = "button" value = "Draw circle" onclick = "Draw()">
+  	 	</form>	 
+  	  </div> 
+  	  <div style = "border: 5px inset; width: 800px; height: 400px; float: left; margin: auto;">
+	    <canvas id = "empty" width = "800" height = "400">
+	    </canvas>
+	    Canvas
+	  </div>
+	  <div style = "border: 5px inset; width: 800px; height: 400px; float: right; margin: auto;">
+	    <svg id = "filled" width = "800" height = "400">
+	    </svg>
+	    SVG
+	  </div>
+	 <script> 
+	 	function Draw(){
+	 		var form = document.getElementById("parameters");
+	 		var x = parseInt(form.X.value);
+			var y = parseInt(form.Y.value);
+			var r = parseInt(form.R.value); 	// document.form.R.value nie dziala?
+
+			var canEmpty = document.getElementById("empty");
+			var canFilled = document.getElementById("filled");
+		
+			var w = canEmpty.width;
+			var h = canEmpty.height;
+
+			if (x > w)
+				{x = w - r;}
+			if (x < 0) 
+				{x = 0;}
+			if(x - r < 0 ) 
+				{r = x;}
+		    if(x + r > w)
+				{r = w - x;}
+			if (y < 0) 
+				{y = 0;}
+			if (y > h)
+				{y = h - r;}
+			if(y - r < 0) 
+				{r = y;}
+			if(y + r > h) 
+				{r = h - y;}
+
+			var contextEmpty = canEmpty.getContext("2d");
+			contextEmpty.beginPath();
+			contextEmpty.arc(x, y, r, 0, 2 * Math.PI, false);
+			contextEmpty.strokeStyle = '#B2CFC4'; //rgb nie dziala
+			contextEmpty.lineWidth = 2.5;
+			// contextEmpty.fillStyle = '#A1CFB2';
+  			// contextEmpty.fill();
+			contextEmpty.stroke();
+
+			 var s = document.getElementById("filled");
+			 s.innerHTML = '<circle cx="' + x + '" cy="' + y +'" r="' + r + '" fill="#A1CFB2" stroke = "#B2CFC4"  stroke-width="3" />';
+	 	}
+	 </script>
+  </body>
+</html>
+

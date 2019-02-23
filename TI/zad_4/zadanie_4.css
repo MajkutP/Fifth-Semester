@@ -1,0 +1,28 @@
+fieldset {
+    width: 800px;
+    background-color: #BFC2D4;
+    border-radius: 10px;
+    border-style: inset;
+}
+
+legend {
+    margin: auto
+    float: left;
+    background-color: #BFC2D4;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+#info{
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    border-style: inset;
+}
+
+
+.enterInfo {
+    background-color: #D0CED4;
+    margin: auto;
+    text-align: center;
+}

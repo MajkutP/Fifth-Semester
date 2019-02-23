@@ -1,0 +1,30 @@
+table{
+	 margin: auto;
+	 border: 5px;
+	 border-style: double
+  box-shadow: 2px 2px 7px 1px #0095B3;
+	}
+ 
+tr{
+	background-color: #6B828A;
+	text-align: center;
+	}
+ 
+tr:nth-child(2n){
+	background-color: #DEE0E0;
+	text-align: center;
+	}
+ 
+fieldset {
+    margin: auto;
+    width: 800px;
+    background-color: #6B828A;
+    border-radius: 10px;
+    border-style: inset;
+}
+
+.enterInfo {
+    background-color: #D0CED4;
+    margin: auto;
+    text-align: center;
+}

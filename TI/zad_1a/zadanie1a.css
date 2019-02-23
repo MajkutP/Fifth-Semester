@@ -1,0 +1,70 @@
+#body {
+	margin: auto;
+}
+#header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 22em;
+}
+#menu {
+	margin-left: auto;
+    margin-right: auto;
+    width: 22em
+}
+#content {
+	left: 300px; 
+	top: 100px;
+    margin: auto;
+    width: 75%;
+    border: 3px solid grey;
+    padding: 10px;
+}
+#footerContent {
+	margin: auto;
+	bottom: 0;
+	width: 20em;
+	font-style: italic;
+}
+#contentImage {
+	width: 50%;
+	margin: 0 auto;
+}
+#contentImage2 {
+	width: 50%;
+	margin: 0 auto;
+}
+#contentImage3 {
+	width: 50%;
+	margin: 0 auto;
+}
+#contentImage4 {
+	width: 50%;
+	margin: 0 auto;
+}
+#contentImage5 {
+	width: 50%;
+	margin: 0 auto;
+}
+#menuTitle {
+	font-weight: bold;
+}
+#contentTitle {
+	background-color: rgb(220,220,220);
+	font-weight: bold;
+}
+#contentTitle2 {
+	background-color: rgb(220,220,220);
+	font-weight: bold;
+}
+#contentTitle3 {
+	background-color: rgb(220,220,220);
+	font-weight: bold;
+}
+#contentTitle4 {
+	background-color: rgb(220,220,220);
+	font-weight: bold;
+}
+#contentTitle5 {
+	background-color: rgb(220,220,220);
+	font-weight: bold;
+}

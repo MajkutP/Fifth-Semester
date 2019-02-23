@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Zadanie_Lab1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="StyleSheet" href="zadanie1a.css" type="text/css">
+  </head>
+  <div id="body">
+      <div id="header">
+        <h1>
+          C++, Rzutowanie
+        </h1>
+      </div>
+      <div id="menu">
+        <div id="menuTitle">
+        <p>
+          Dostępne sposoby rzutowania zmiennych
+        </p>
+      </div>
+        <ol>
+          <li><a href="#p1">Język C</a></li>
+		  <li><a href="#p2">const_cast</a></li>
+	      <li><a href="#p3">static_cast</a></li>
+ 		  <li><a href="#p4">dynamic_cast</a></li>
+	      <li><a href="#p5">reinterpret_cast</a><p></p></li>
+        </ol>
+      </div>
+      <div id="content">
+
+        <a id="p1"></a>
+        <div id="contentTitle">
+        <p>
+          1. Język C
+        </p>
+        </div>
+        <div id="contentDescription">
+        <p>
+          Rzutowanie znane z języka C ma dwie podstawowe wady
+        </p>
+        <ul>
+          <li>ciężko jest znaleźć je w kodzie</li>
+          <li>każde takie rzutowanie jest potencjalnym miejscem wystąpienia błędów</li>
+        </ul>
+        <p>
+          Więcej na: <a href="http://qvazar.pl/kurs-c/podstawy-skladnia-c/rzutowanie-zmiennych">http://qvazar.pl/kurs-c/podstawy-skladnia-c/rzutowanie-zmiennych</a>
+        </p>
+      </div>
+      <div id="contentBox">
+        <fieldset>
+          <legend>
+            Przykład
+          </legend>
+          <pre>
+            double d = 3.14;
+            int pi = (int)d;
+            pi = (unsigned)pi >> 4;
+          </pre>
+        </fieldset>
+      </div>
+      <div id="contentImage">
+        <img src="C_cast.png" alt="cast" width="500" height="45"> <br>
+      </div>
+
+          <a id="p2"></a>
+        <div id="contentTitle2"> 
+        <p>
+          2. Const cast
+        </p>
+        </div>
+        <div id="contentDescription2">
+        <p>
+          Rzutowanie służy do usunięcia klasyfikatorów const lub volatile z typu, którym mogą być jedynie: 
+        </p>
+        <ul>
+          <li>referencje</li>
+          <li>wskaźniki</li>
+          <li>wskaźniki do składowych klasy</li>
+        </ul>
+        <p>
+          Więcej na: <a href="https://en.cppreference.com/w/cpp/language/const_cast">https://en.cppreference.com/w/cpp/language/const_cast</a>
+        </p>
+      </div>
+      <div id="contentBox2">
+        <fieldset>
+          <legend>
+            Przykład
+          </legend>
+          <pre>
+            int policz_literke(const char* napis, char literka) {
+              int n = 0;
+              char* c = const_cast&lt;char*&gt;(napis);
+              while (*c){
+                if (*c++ == literka) n++;
+              }
+            return n;
+            }
+          </pre>
+        </fieldset>
+      </div>
+      <div id="contentImage2">
+        <img src="Const_cast.png" alt="cast" width="600" height="400"> <br>
+      </div>
+
+          <a id="p3"></a>
+          <div id="contentTitle3"> 
+        <p>
+          3. Static cast
+        </p>
+      </div>
+      <div id="contentDescription3">
+        <p>
+          Rzutowanie w którym typ obiektu musi być znany w momencie kompilacji. Static cast służy szczególnie do:
+        </p>
+        <ul>
+          <li>Konwersji podstawowych typów liczbowych</li>
+          <li>Konwersji zdefiniowanych przez użytkownika</li>
+          <li>Konwersji wskaźnika na obiekt klasy pochodnej na wskaźnik na obiekt klasy podstawowej</li>
+          <li>Konwersji wskaźnika na obiekt klasy podstawowej na wskaźnik na obiekt klasy pochodnej </li>
+        </ul>
+        <p>
+          Więcej na: <a href="https://en.cppreference.com/w/cpp/language/static_cast">https://en.cppreference.com/w/cpp/language/static_cast</a>
+        </p>
+      </div>
+      <div id="contentBox3">
+        <fieldset>
+          <legend>
+            Przykład
+          </legend>
+          <pre>
+          #include &lt;iostream&gt;
+          int main ()
+          {
+            int liczba = 5, liczba2 = 2;
+            std::cout &lt;&lt; "5/2 int(bez rzutowania): " &lt;&lt; liczba/liczba2 &lt;&lt; std::endl;
+            std::cout &lt;&lt; "5/2 float(static_cast): " 
+              &lt;&lt; static_cast&lt;float&gt;(liczba)/static_cast&lt;float&gt;(liczba2) &lt;&lt; std::endl;
+            return 0;
+          }
+         </pre>
+        </fieldset>
+      </div>
+      <div id="contentImage3">
+        <img src="Static_cast.png" alt="cast" width="200" height="40"> <br>
+      </div>
+
+          <a id="p4"></a>
+          <div id="contentTitle4"> 
+        <p>
+          4. Dynamic cast
+        </p>
+      </div>
+      <div id="contentDescription4">
+        <p>
+          Najczęściej użyane do rzutowania wskaźników bazowych na pochodne (w dół hierarchii dziedziczenia)
+        </p>
+        <p>
+          Więcej na: <a href="https://en.cppreference.com/w/cpp/language/dynamic_cast">https://en.cppreference.com/w/cpp/language/dynamic_cast</a>
+        </p>
+      </div>
+      <div id="contentBox4">
+        <fieldset>
+          <legend>
+            Zastosowanie
+          </legend>
+          <pre>
+            dynamic_cast&lt; Type* &gt;(ptr)
+          </pre>
+        </fieldset>
+      </div>
+      <div id="contentImage4">
+        <img src="dynamic_cast.png" alt="cast" width="600" height="400"> <br>
+      </div>
+
+          <a id="p5"></a>
+          <div id="contentTitle5"> 
+        <p>
+          5. Reinterpret cast
+        </p>
+      </div>
+      <div id="contentDescription5">
+        <ul>
+          <li>niebezpieczne rzutowania, które zmieniają zupełnie sens interpretacji bitów w zmiennych</li>
+          <li>rzutowanie to nie pozwala na zdjęcie modyfikatora const</li>
+        </ul>
+        <p>
+          Więcej na: <a href="https://en.cppreference.com/w/cpp/language/reinterpret_cast">https://en.cppreference.com/w/cpp/language/reinterpret_cast</a>
+        </p>
+      </div>
+      <div id="contentBox5">
+        <fieldset>
+          <legend>
+            Zastosowanie
+          </legend>
+          <pre>
+           int* a = new int();
+           void* b = reinterpret_cast&lt;void*&gt;(a);
+           int* c = reinterpret_cast&lt;int*&gt;(b);
+          </pre>
+        </fieldset>
+      </div>
+      <div id="contentImage5">
+        <img src="Reinterpret_cast.png" alt="cast" width="600" height="400"> <br>
+      </div>
+      </div>
+      <footer id="footer"> 
+        <div id="footerContent">Autor: Piotr Majkut Wersja 1.0 </div>
+      </footer>
+  </div>
+</html>
